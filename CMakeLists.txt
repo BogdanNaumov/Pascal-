@@ -7,7 +7,7 @@ project(${PROJECT_NAME}) # Название проекта.
 set(TEST TEST)
 set(skip_list skip_list)
 set(priority_queue priority_queue)
-set(d_heaps d_heaps)
+
 
 
 # Создаем переменную для типов сборки и устанавливаем значения Debug и Release.
@@ -28,12 +28,10 @@ include_directories(
     ${CMAKE_CURRENT_SOURCE_DIR}/TEST
     ${CMAKE_CURRENT_SOURCE_DIR}/skip_list
     ${CMAKE_CURRENT_SOURCE_DIR}/priority_queue
-    ${CMAKE_CURRENT_SOURCE_DIR}/d_heaps
 )
 
 # Добавляем субдиректории для сборки остальных проектов.
 add_subdirectory(TEST)
 add_subdirectory(skip_list)
 add_subdirectory(priority_queue)
-add_subdirectory(d_heaps)
 

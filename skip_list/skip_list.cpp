@@ -3,30 +3,10 @@
 #include"../skip_list/skip_list.h"
 using namespace std;
 
-//int main() {
-//    SkipList<int> intSkipList(5, 0.5);
-//
-//    intSkipList.insert(10);
-//    intSkipList.insert(5);
-//    intSkipList.insert(15);
-//
-//
-//    intSkipList.printList();
-//
-//    SkipList<string> strSkipList(5, 0.5);
-//
-//    strSkipList.insert("apple");
-//    strSkipList.insert("orange");
-//    strSkipList.insert("banana");
-//
-//    strSkipList.printList();
-//
-//    return 0;
-//}
 
 int main() {
     setlocale(LC_ALL, "rus");
-    SkipList<int> sl(20, 0.5); // Создаем объект класса SkipList с максимальным уровнем 4 и вероятностью 0.5
+    SkipList<int> sl(20, 0.5); 
     int choice;
     int value;
 
